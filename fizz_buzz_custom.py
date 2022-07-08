@@ -1,6 +1,7 @@
 """
 Fizz Buzz custom:
-    1. Loop through list of numbers and print FizzBuzz result for each
+    1. Loop through a data structure containing numbers
+    and print FizzBuzz result for each
     2. Get user inputs for name and age, tell user the FizzBuzz result
     for their age in a string
 
@@ -8,7 +9,7 @@ FizzBuzz rules:
     - if number is divisible by 3, return "Fizz"
     - if number is divisible by 5, return "Buzz"
     - if number is divisible by both 3 and 5, return "FizzBuzz"
-    - if number is not devisible by either 3 or 5, return the number.
+    - if number is not divisible by either 3 or 5, return the number.
 """
 
 
