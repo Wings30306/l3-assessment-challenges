@@ -32,9 +32,9 @@ def loop_mode():
     """
     Loop through a list of numbers and return the result
     """
-    nums = [1, 2, 3, 5, 7, 12, 19, 28, 31, 42]
+    nums = range(1, 101)
     for num in nums:
-        print(f"In BimBam, {num} would return {bim_bam(num)}")
+        print(bim_bam(num))
 
 
 def custom_mode():
@@ -45,23 +45,25 @@ def custom_mode():
     name = input("What is your name? ")
     age = int(input("How old are you? "))
     result = bim_bam(age)
-    print(f"{name}, you are {age} years old.")
-    print(f"In BimBam, this number would return {result}")
+    print(f"{name}, you are {age} years old. In BimBam, this number would return {result}")
 
 
 def play():
     """
     Explain modes and let user choose
     """
-    print("Hi there, welcome to BimBam Custom")
     print("We have two modes for you to choose from:")
     print("1. Loop through a list of numbers to see what BimBam returns.")
     print("2. Enter your age and see what the BimBam result for that is.")
     mode = int(input("Which would you like to try? (1/2) "))
     if mode == 1:
         loop_mode()
-    else:
+    elif mode == 2:
         custom_mode()
+    else:
+        print("That is not a recognised option")
+        play()
 
 
+print("Hi there, welcome to BimBam Custom!")
 play()
