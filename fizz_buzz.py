@@ -76,5 +76,5 @@ def play_again():
         print("Goodbye!")
 
 
-print("Hi there, welcome to FizzBuzz Custom!")
+print("Hi there, welcome to FizzBuzz!")
 play()
